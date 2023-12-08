@@ -29,3 +29,5 @@ jobs:
           python -m pip install pyopengl   
           python -m pip install pygame
           python -m pip install numpy
+      - name: Run test
+        run: python -m unittest discover -s tests
