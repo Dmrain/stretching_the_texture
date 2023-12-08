@@ -2,9 +2,9 @@ import pygame
 from OpenGL.GL import *
 import numpy as np
 
-def load_texture():
 
-    texture_surface = pygame.image.load('gif&img/tekstura.png')
+def load_texture(texture_path):
+    texture_surface = pygame.image.load(texture_path)
     texture_data = pygame.image.tostring(texture_surface, "RGBA", 1)
     width, height = texture_surface.get_width(), texture_surface.get_height()
 
@@ -16,12 +16,14 @@ def load_texture():
 
     return texture, width, height
 
+
 pygame.init()
 window_width, window_height = 800, 600
 pygame.display.set_mode((window_width, window_height), pygame.OPENGL | pygame.DOUBLEBUF)
 
+texture_path = 'gif&img/tekstura.png'
 # Загрузка текстуры
-texture, texture_width, texture_height = load_texture()
+texture, texture_width, texture_height = load_texture(texture_path)
 
 # Установка параметров OpenGL
 glEnable(GL_TEXTURE_2D)
