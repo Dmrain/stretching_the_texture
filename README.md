@@ -11,6 +11,7 @@
 > 
 ## Демонстрация выполнения программы
 
+![GIF](https://github.com/Dmrain/stretching_the_texture/blob/master/gif%26img/gifka.gif)
 ## Установка и запуск
 
 Клонировать репозиторий:
