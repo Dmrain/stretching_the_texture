@@ -25,9 +25,7 @@
 Установить зависимости:
 
     install python
-    pip install PyOpenGL
-     pip install PyOpenGL_accelerate
-    pip install pygame
+    pip install -r requirements.txt
     pip install unittest
 
 Открыть терминал в исходной папке проекта и выполнить следующую команду:
